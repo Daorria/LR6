@@ -4,8 +4,18 @@
 **Работу выполнила:** Иваненко Дарья Игоревна гр.4315
 ## Создание аккаунта в Github
 До выолнения лабораторной работы был создан аккаунт Daorria
+
 ![Akk](https://github.com/Daorria/LR6/blob/report/image/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20234533.png)
 ## Установка Git
 До выполнения лабораторной работы был установлен Git
+
 ![Yst](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20234633.png)
 
+## Настройка клиента Git
+Указываем ФИО и номер группы в никнейме и свою почту.
+'''
+git config --global user.name "Ivanenko Darya Igorevna 4315"
+git config --global user.email "ivanenkolgaigor@gmail.com"
+'''
+
+![nastroika](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20223053.png)
