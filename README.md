@@ -44,6 +44,7 @@ git clone https://github.com/Daorria/LR6
 ![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20223201.png)
 
 Необходимо придумать название файла и то, что в нем будет находится. Далее, нажимаем на кнопку Commit changes и добавляем сообщение.
+
 ![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20223240.png)
 
 Файл forLab6 будет отображаться в удаленном репозитории.
@@ -64,7 +65,7 @@ git pull
 
 В папке LR6 появился файл forLab6.
 
-![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20223344.png
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20223344.png)
 
 ## Вывод историй операций
 Для того, чтобы посмотреть историю операций для каждой из веток, используем команду:
@@ -179,5 +180,30 @@ git push -f origin master
 
 
 ![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20231852.png)
+
+## Создание ветки для отчета
+Создаем ветку report, используя команду:
+```
+git branch report
+```
+Далее, можем перейти в ветку report, воспользовавшись командой:
+
+```
+git checkout report
+```
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20231952.png)
+Отправляем изменение в удаленный репозиторий, используя команду:
+
+```
+git push origin report
+```
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20232526.png)
+
+В удалённом репозитории появилась ветка report.
+
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20232543.png)
+
+## История операций в форматированном виде
+
 
 
