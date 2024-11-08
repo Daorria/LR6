@@ -118,8 +118,66 @@ git commit -m"Изменение файла mergefile".
 
 ![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20223828.png)
 
+## Удаление побочной ветки
+Для того, чтобы удалить ветку branch1 в локальном репозитории, необходимо воспользоваться командой:
+
+```
+git branch -d branch1
+```
+
+Чтобы добавить изменения в удаленный репозиторий, воспользуемся командой:
+
+```
+git push origin --delete branch1
+```
+
+чтобы посмотреть,удалилась ли ветка, используем команду:
+```
+git branch
+```
+
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20224828.png)
+
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20224853.png)
+
+## Откат коммитов
+Добавим три файла, сделав 3 коммита, используя следующие команды:
+
+```
+git add file1.txt
+git commit-m"Первый коммит"
+git add file2.txt
+git commit -m"Второй коммит"
+git add file3.txt
+git commit -m"Третий коммит"
+git push
+```
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20230710.png)
+
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20230833.png)
+
+Проверяем наличие файлов с коммитами в удаленном репозитори и в локальном.
+
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20230848.png)
+
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20230958.png)
+
+Для отката до предыдущего коммита, воспользуемся командой:
+
+```
+git reset --hard HEAD~1
+```
+
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20231713.png)
+
+Добавляем откат коммита в удаленный репозиторий, воспользовавшись командой:
+
+```
+git push -f origin master
+```
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20231836.png)
 
 
-
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20231852.png)
 
 
