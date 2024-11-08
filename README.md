@@ -48,6 +48,77 @@ git clone https://github.com/Daorria/LR6
 
 Файл forLab6 будет отображаться в удаленном репозитории.
 
+Переходим в папку LR6, используя команду:
+
+```
+cd LR6
+```
+
+Подтягиваем изменения с удалённого репозитория в локальный, воспользовавшись командой:
+
+```
+git pull
+```
+
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20223320.png)
+
+В папке LR6 появился файл forLab6.
+
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20223344.png
+
+## Вывод историй операций
+Для того, чтобы посмотреть историю операций для каждой из веток, используем команду:
+
+```
+git log --all
+```
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20223433.png)
+
+## Просмотр последнего изменения
+Просмотр последнего изменения осуществляется с помощью команды:
+
+```
+git log -p -1
+```
+
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20223457.png)
+
+## Слияние. Конфликт и его разрешение
+
+Попытаемся осуществить слияние веток master и branch1, используя команду:
+
+```
+git merge origin/branch1
+```
+
+Возникнет конфликт так как файл с одним названием содержит разную информацию.
+
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20223537.png)
+
+Чтобы разрешить конфликт, необходимо открыть mergefile.txt в любом редакторе и прининять изменения только от HEAD.
+
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20223600.png)
+
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20223617.png)
+
+Добавляем уже измененный файл, используя команду:
+
+```
+git add mergefile.txt
+```
+Делаем коммит:
+
+```
+git commit -m"Изменение файла mergefile".
+```
+
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20223747.png)
+
+Теперь,слияние веток будет успешным.
+
+![](https://github.com/Daorria/LR6/blob/report/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-11-07%20223828.png)
+
+
 
 
 
